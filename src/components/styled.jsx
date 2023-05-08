@@ -79,6 +79,10 @@ export const Img = styled.img`
   margin-top: 1rem;
 `;
 
+export const Intro = styled.p`
+  margin-bottom: 1rem;
+  line-height: 2;
+`;
 export const BulletedText = styled.li`
   list-style: disc;
 `;
@@ -97,3 +101,4 @@ export const Gray = styled.span`
   color: #ccc;
   margin-left: 1rem;
 `;
+export const Box = styled.div``;
