@@ -88,8 +88,12 @@ function Resume({ currentTab, setCurrentTab }) {
           <S.Title>Certificates</S.Title>
           <S.Line />
         </S.TitleBox>
-        <S.SubTitle lineheight="2">웹디자인기능사 <S.Gray>2022.12</S.Gray></S.SubTitle>
-        <S.SubTitle lineheight="2">컴퓨터그래픽스운용기능사 <S.Gray>2019.02</S.Gray></S.SubTitle>
+        <S.SubTitle lineheight="2">
+          웹디자인기능사 <S.Gray>2022.12</S.Gray>
+        </S.SubTitle>
+        <S.SubTitle lineheight="2">
+          컴퓨터그래픽스운용기능사 <S.Gray>2019.02</S.Gray>
+        </S.SubTitle>
       </S.Container>
     </S.Wrap>
   );
