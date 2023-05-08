@@ -16,17 +16,18 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element=<Portfolio
-              currentTab={currentTab}
-              setCurrentTab={setCurrentTab}
-            />
+            element={
+              <Portfolio
+                currentTab={currentTab}
+                setCurrentTab={setCurrentTab}
+              />
+            }
           />
           <Route
             path="/resume"
-            element=<Resume
-              currentTab={currentTab}
-              setCurrentTab={setCurrentTab}
-            />
+            element={
+              <Resume currentTab={currentTab} setCurrentTab={setCurrentTab} />
+            }
           />
         </Routes>
       </BodyWrap>
