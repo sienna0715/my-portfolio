@@ -10,7 +10,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState("Portfolio");
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <BodyWrap>
         <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <Routes>
