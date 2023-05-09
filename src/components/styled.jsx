@@ -96,7 +96,6 @@ export const Text = styled.span`
     font-size: 0.9rem;
   }
 `;
-
 export const Gray = styled.span`
   color: #ccc;
   margin-left: 1rem;
