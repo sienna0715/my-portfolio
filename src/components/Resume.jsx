@@ -79,15 +79,11 @@ function Resume({ currentTab, setCurrentTab }) {
             <S.Title>Education</S.Title>
             <S.Line />
           </S.TitleBox>
-          <S.Date>2019.03 ~ 2022.08</S.Date>
-          <S.Section>
-            <S.LeftBox>
-              <S.SubTitle>계명대학교</S.SubTitle>
-            </S.LeftBox>
-            <S.RightBox>
-              <S.Contents>언론영상학 학사</S.Contents>
-            </S.RightBox>
-          </S.Section>
+          <S.RowBox>
+            <S.SubTitle>계명대학교</S.SubTitle>
+            <S.Contents margin="0" padding="0.5rem">언론영상학 학사</S.Contents>
+          </S.RowBox>
+          <S.Date margin="0.5rem">2019.03 ~ 2022.08</S.Date>
         </S.Box>
         <S.Box>
           <S.TitleBox>

@@ -13,7 +13,6 @@ export const Tag = styled.span`
 `;
 
 export const Wrap = styled.div`
-  height: 100%;
   margin: 5rem;
   display: flex;
   flex-direction: column;
@@ -62,8 +61,8 @@ export const SubTitle = styled.div`
   line-height: ${(props) => (props.lineheight ? props.lineheight : "none")};
 `;
 export const Date = styled.div`
-  color: #ccc;
-  margin-top: 1rem;
+  color: ${(props) => (props.black ? props.black : "#ccc")};
+  margin-top: ${props => props.margin ? props.margin : '1rem'};
 `;
 
 export const ContentsBox = styled.div`
@@ -71,7 +70,8 @@ export const ContentsBox = styled.div`
   flex-wrap: wrap;
 `;
 export const Contents = styled.span`
-  margin-bottom: 1rem;
+  margin-bottom: ${props => props.margin ? props.margin : '1rem'};
+  padding-left: ${props => props.padding ? props.padding : '0'};
   line-height: 2;
 `;
 export const Img = styled.img`
@@ -101,3 +101,8 @@ export const Gray = styled.span`
   margin-left: 1rem;
 `;
 export const Box = styled.div``;
+export const RowBox = styled.div`
+height: 30px;
+  display: flex;
+  align-items: center;
+`;
