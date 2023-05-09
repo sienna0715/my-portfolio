@@ -39,7 +39,7 @@ function Portfolio({ currentTab, setCurrentTab }) {
           <S.Title>Projects</S.Title>
           <S.Line />
         </S.TitleBox>
-        <S.Date>2022.10 ~ 2023.04</S.Date>
+        <S.Date>2023.03 ~ 2023.04</S.Date>
         <S.Section>
           <S.LeftBox>
             <S.SubTitle>웹 편지 서비스</S.SubTitle>

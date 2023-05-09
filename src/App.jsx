@@ -15,7 +15,7 @@ function App() {
         <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <Routes>
           <Route
-            path="/"
+            path="/portfolio"
             element={
               <Portfolio
                 currentTab={currentTab}
