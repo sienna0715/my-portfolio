@@ -46,7 +46,7 @@ function Profile({ currentTab, setCurrentTab }) {
             {currentTab === "Portfolio" ? (
               <Link to="/resume">이력서 보러가기 👉</Link>
             ) : (
-              <Link to="/portfolio">포트폴리오 보러가기 👉</Link>
+              <Link to="/">포트폴리오 보러가기 👉</Link>
             )}
           </MovePage>
         </LinkList>

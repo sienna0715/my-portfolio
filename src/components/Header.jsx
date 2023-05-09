@@ -8,7 +8,7 @@ function Header({ currentTab, setCurrentTab }) {
   const handleClick = (e) => {
     if (e.target.textContent === "Portfolio") {
       setCurrentTab("Portfolio");
-      navigate("/portfolio");
+      navigate("/");
     } else {
       setCurrentTab("Resume");
       navigate("/resume");
