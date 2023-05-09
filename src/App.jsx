@@ -10,7 +10,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState("Portfolio");
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <BodyWrap>
         <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <Routes>
