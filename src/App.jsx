@@ -6,6 +6,7 @@ import Resume from "./components/Resume";
 import { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import Footer from "./commons/Footer";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("Portfolio");
@@ -38,6 +39,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </BodyWrap>
     </BrowserRouter>
   );

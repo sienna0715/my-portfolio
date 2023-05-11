@@ -130,9 +130,9 @@ function Portfolio({ currentTab, setCurrentTab }) {
               URL을 저장하여 쉽게 접속할 수 있는 즐겨찾기 메뉴
             </S.BulletedText>
             <S.BulletedText>
-              암기한 단어 목표, 갯수를 확인할 수 있는 챌린지 메뉴
+              암기한 단어 갯수, 목표를 확인할 수 있는 챌린지 메뉴
             </S.BulletedText>
-            <S.SubTitle>피그마 디자인 예시</S.SubTitle>
+            <S.TempTitle>피그마 디자인 예시</S.TempTitle>
             <S.Img src={require("../images/stackUp.gif")} alt="" />
           </S.RightBox>
         </S.Section>

@@ -61,7 +61,7 @@ export const Title = styled.div`
 `;
 export const SubTitle = styled.div`
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   margin-bottom: 0.5rem;
   line-height: ${(props) => (props.lineheight ? props.lineheight : "none")};
 `;
@@ -110,4 +110,9 @@ export const RowBox = styled.div`
   height: 30px;
   display: flex;
   align-items: center;
+`;
+export const TempTitle = styled.div`
+  font-weight: bold;
+  margin-top: 1.5rem;
+  line-height: ${(props) => (props.lineheight ? props.lineheight : "none")};
 `;
