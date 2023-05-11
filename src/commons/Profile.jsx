@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BiEnvelope, BiPhoneCall } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { FaQuoteLeft } from "react-icons/fa";
-import { SiVelog } from "react-icons/si";
+import { SiBloglovin } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 function Profile({ currentTab, setCurrentTab }) {
@@ -38,8 +38,8 @@ function Profile({ currentTab, setCurrentTab }) {
             </a>
           </LinkItem>
           <LinkItem>
-            <a href="https://velog.io/@sion8120">
-              <SiVelog />
+            <a href="https://seven-day-five.tistory.com/">
+              <SiBloglovin />
             </a>
           </LinkItem>
           <MovePage onClick={handleClick}>
