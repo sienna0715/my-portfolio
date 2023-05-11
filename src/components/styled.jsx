@@ -28,6 +28,11 @@ export const Section = styled.div`
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 `;
+export const SectionLine = styled.div`
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 3rem;
+`;
 export const LeftBox = styled.div`
   width: 100px;
   margin-right: 3rem;
@@ -56,13 +61,13 @@ export const Title = styled.div`
 `;
 export const SubTitle = styled.div`
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: ${(props) => (props.lineheight ? props.lineheight : "none")};
 `;
 export const Date = styled.div`
   color: ${(props) => (props.black ? props.black : "#ccc")};
-  margin-top: ${props => props.margin ? props.margin : '1rem'};
+  margin-top: ${(props) => (props.margin ? props.margin : "1rem")};
 `;
 
 export const ContentsBox = styled.div`
@@ -70,8 +75,8 @@ export const ContentsBox = styled.div`
   flex-wrap: wrap;
 `;
 export const Contents = styled.span`
-  margin-bottom: ${props => props.margin ? props.margin : '1rem'};
-  padding-left: ${props => props.padding ? props.padding : '0'};
+  margin-bottom: ${(props) => (props.margin ? props.margin : "1rem")};
+  padding-left: ${(props) => (props.padding ? props.padding : "0")};
   line-height: 2;
 `;
 export const Img = styled.img`
@@ -102,7 +107,7 @@ export const Gray = styled.span`
 `;
 export const Box = styled.div``;
 export const RowBox = styled.div`
-height: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
 `;

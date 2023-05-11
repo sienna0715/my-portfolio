@@ -39,6 +39,7 @@ function Portfolio({ currentTab, setCurrentTab }) {
           <S.Title>Projects</S.Title>
           <S.Line />
         </S.TitleBox>
+        {/* 1 */}
         <S.Date>2023.03 ~ 2023.04</S.Date>
         <S.Section>
           <S.LeftBox>
@@ -63,8 +64,8 @@ function Portfolio({ currentTab, setCurrentTab }) {
             </S.Text>
             <S.SubTitle>Stack I used</S.SubTitle>
             <S.ContentsBox>
-              <S.Tag>React Router</S.Tag>
               <S.Tag>React</S.Tag>
+              <S.Tag>React Router</S.Tag>
               <S.Tag>React Hook Form</S.Tag>
               <S.Tag>Zustand</S.Tag>
               <S.Tag>axios</S.Tag>
@@ -88,6 +89,51 @@ function Portfolio({ currentTab, setCurrentTab }) {
             <S.BulletedText>풀페이지를 이용한 메인 페이지 제작</S.BulletedText>
             <S.BulletedText>반응형 및 CSS 구현</S.BulletedText>
             <S.Img src={require("../images/sendy.gif")} alt="" />
+          </S.RightBox>
+        </S.Section>
+        <S.SectionLine />
+        {/* 2 */}
+        <S.Date>2023.03 ~ 2023.04</S.Date>
+        <S.Section>
+          <S.LeftBox>
+            <S.SubTitle>영어 단어장</S.SubTitle>
+          </S.LeftBox>
+          <S.RightBox>
+            <S.Contents>
+              실전 경험을 쌓기 위해, 평소 필요했던 서비스를 타입스크립트와
+              리액트를 사용하여 제작하였습니다. (아직 개발 중)
+            </S.Contents>
+            <S.Text>
+              <del>
+                <BsBoxArrowInUpRight className="icon" />
+                배포 사이트
+              </del>
+            </S.Text>
+            <S.Text margin="1rem">
+              <del>
+                <BsBoxArrowInUpRight className="icon" />
+                GitHub
+              </del>
+            </S.Text>
+            <S.SubTitle>Stack I used</S.SubTitle>
+            <S.ContentsBox>
+              <S.Tag>TypeScript</S.Tag>
+              <S.Tag>React</S.Tag>
+              <S.Tag>React Router</S.Tag>
+              <S.Tag>Styled Components</S.Tag>
+              <S.Tag>react-icons</S.Tag>
+              <S.Tag>Prettier</S.Tag>
+            </S.ContentsBox>
+            <S.SubTitle>Feature I made</S.SubTitle>
+            <S.BulletedText>단어장(CRUD)</S.BulletedText>
+            <S.BulletedText>
+              URL을 저장하여 쉽게 접속할 수 있는 즐겨찾기 메뉴
+            </S.BulletedText>
+            <S.BulletedText>
+              암기한 단어 목표, 갯수를 확인할 수 있는 챌린지 메뉴
+            </S.BulletedText>
+            <S.SubTitle>피그마 디자인 예시</S.SubTitle>
+            <S.Img src={require("../images/stackUp.gif")} alt="" />
           </S.RightBox>
         </S.Section>
       </S.Container>
