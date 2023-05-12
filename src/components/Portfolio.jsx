@@ -110,10 +110,10 @@ function Portfolio({ currentTab, setCurrentTab }) {
               </del>
             </S.Text>
             <S.Text margin="1rem">
-              <del>
+              <a href="https://github.com/sienna0715/stackUp">
                 <BsBoxArrowInUpRight className="icon" />
                 GitHub
-              </del>
+              </a>
             </S.Text>
             <S.SubTitle>Stack I used</S.SubTitle>
             <S.ContentsBox>
