@@ -15,6 +15,6 @@ body {
   background-color: #ccc;
   display: flex;
   justify-content: center;
-  background-image: url('./images/background.png');
+  background-image: url('./asset/background.png');
   background-size: cover;
 }

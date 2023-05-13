@@ -1,12 +1,14 @@
+import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import Resume from "./components/Resume";
-import { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Footer from "./commons/Footer";
+import Sendy from "./project/Sendy";
+import Todo from "./project/Todo";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("Portfolio");
@@ -38,6 +40,8 @@ function App() {
               <Resume currentTab={currentTab} setCurrentTab={setCurrentTab} />
             }
           />
+          <Route path="/sendy" element={<Sendy />} />
+          <Route path="/todo" element={<Todo />} />
         </Routes>
         <Footer />
       </BodyWrap>

@@ -17,7 +17,7 @@ function Profile({ currentTab, setCurrentTab }) {
 
   return (
     <ProfileWrap>
-      <ProfileImg src={require("../images/sion.jpg")} />
+      <ProfileImg src={require("../asset/sion.jpg")} />
       <ProfileContainer>
         <Name>이시온 | FrontEnd Dev</Name>
         <Contents>
