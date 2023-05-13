@@ -72,7 +72,7 @@ function Resume({ currentTab, setCurrentTab }) {
           <S.Date>2023.03 ~ 2023.04</S.Date>
           <S.Section>
             <S.LeftBox>
-              <S.SubTitle>웹 편지 서비스</S.SubTitle>
+              <S.SubTitle>웹 편지</S.SubTitle>
             </S.LeftBox>
             <S.RightBox>
               <S.Contents>
