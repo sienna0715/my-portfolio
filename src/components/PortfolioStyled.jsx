@@ -13,6 +13,7 @@ export const ProjectBox = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
+  font-size: 1.1rem;
 `;
 export const ContentsBox = styled.div`
   width: 100%;
@@ -47,7 +48,7 @@ export const TitleBox = styled.div`
   align-items: center;
 `;
 export const Title = styled.div`
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-right: 0.5rem;
@@ -60,7 +61,6 @@ export const SubTitle = styled.div`
 `;
 export const Contents = styled.span`
   line-height: 2;
-  font-size: 1.2rem;
 `;
 
 export const Button = styled.button`

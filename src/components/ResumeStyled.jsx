@@ -54,7 +54,7 @@ export const TitleBox = styled.div`
   align-items: center;
 `;
 export const Title = styled.div`
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-right: 0.5rem;
@@ -105,7 +105,9 @@ export const Gray = styled.span`
   color: #ccc;
   margin-left: 1rem;
 `;
-export const Box = styled.div``;
+export const Box = styled.div`
+  font-size: 1.1rem;
+`;
 export const RowBox = styled.div`
   height: 30px;
   display: flex;

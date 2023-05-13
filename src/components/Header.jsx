@@ -49,6 +49,7 @@ const HeaderList = styled.ul`
 
 const HeaderItem = styled.li`
   font-weight: bold;
+  font-size: 1.1rem;
   margin-right: 3rem;
   padding-bottom: 0.5rem;
   border-bottom: ${(props) => (props.select ? props.select : "none")};

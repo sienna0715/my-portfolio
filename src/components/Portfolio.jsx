@@ -49,14 +49,12 @@ function Portfolio({ currentTab, setCurrentTab }) {
             <S.Line />
           </S.TitleBox>
           <S.Contents>
-            편지를 작성하여 주고 받거나, SNS로 공유할 수 있는 웹 서비스 입니다.
+            평소 필요했던 서비스를 타입스크립트로 제작하였습니다.
           </S.Contents>
           <S.SubTitle>Preview</S.SubTitle>
           <S.Img src={require("../asset/stackUp.gif")} alt="" />
           <S.SubTitle>개발 기간</S.SubTitle>
-          <S.Contents>
-            2023.05.10 ~ (개발 중 | 2023.05.20 배포 예정)
-          </S.Contents>
+          <S.Contents>2023.05.10 ~ (개발 중 | 2023.05.20 배포 예정)</S.Contents>
           <S.SubTitle>사용한 기능</S.SubTitle>
           <S.ContentsBox>
             <S.Tag>TypeScript</S.Tag>
