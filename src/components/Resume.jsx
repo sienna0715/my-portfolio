@@ -129,7 +129,7 @@ function Resume({ currentTab, setCurrentTab }) {
             </S.LeftBox>
             <S.RightBox>
               <S.Contents>
-              평소 필요했던 기능을 담은 단어장 웹 어플리케이션입니다.
+                평소 필요했던 기능을 담은 단어장 웹 어플리케이션입니다.
               </S.Contents>
               <S.Text>
                 <a href="https://stack-up.vercel.app/">
@@ -148,6 +148,7 @@ function Resume({ currentTab, setCurrentTab }) {
                 <S.Tag>TypeScript</S.Tag>
                 <S.Tag>React</S.Tag>
                 <S.Tag>React Router</S.Tag>
+                <S.Tag>fullcalendar</S.Tag>
                 <S.Tag>Styled Components</S.Tag>
                 <S.Tag>react-icons</S.Tag>
                 <S.Tag>Prettier</S.Tag>
@@ -224,7 +225,7 @@ function Resume({ currentTab, setCurrentTab }) {
               </S.BulletedText>
               <S.BulletedText>
                 프론트엔드와 백엔드가 협업하여 창작 서비스를 만들었습니다.
-              </S.BulletedText>  
+              </S.BulletedText>
               <S.BulletedText>
                 무한 스크롤링에 대해 기술 발표를 진행했습니다.
               </S.BulletedText>
