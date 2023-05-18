@@ -18,7 +18,7 @@ function Portfolio({ currentTab, setCurrentTab }) {
             <S.Line />
           </S.TitleBox>
           <S.Contents>
-            편지를 작성하여 주고 받거나, SNS로 공유할 수 있는 웹 서비스 입니다.
+            백엔드 3명, 프론트엔드 3명으로 이루어져서 진행한 프로젝트로, 편지를 작성하여 주고 받거나, SNS로 공유할 수 있는 웹 서비스 입니다.
           </S.Contents>
           <S.SubTitle>Preview</S.SubTitle>
           <S.Img src={require("../asset/sendy.gif")} alt="" />
@@ -49,21 +49,25 @@ function Portfolio({ currentTab, setCurrentTab }) {
             <S.Line />
           </S.TitleBox>
           <S.Contents>
-            평소 필요했던 서비스를 타입스크립트로 제작하였습니다.
+            개인으로 진행한 프로젝트로, 평소 필요했던 기능을 담은 단어장 웹 어플리케이션입니다.
           </S.Contents>
           <S.SubTitle>Preview</S.SubTitle>
           <S.Img src={require("../asset/stackUp.gif")} alt="" />
           <S.SubTitle>개발 기간</S.SubTitle>
-          <S.Contents>2023.05.10 ~ (개발 중 | 2023.05.20 배포 예정)</S.Contents>
+          <S.Contents>2023.05.10 ~ 2023.05.18 (9일)</S.Contents>
           <S.SubTitle>사용한 기능</S.SubTitle>
           <S.ContentsBox>
             <S.Tag>TypeScript</S.Tag>
             <S.Tag>React</S.Tag>
             <S.Tag>React Router</S.Tag>
+            <S.Tag>fullcalendar</S.Tag>
             <S.Tag>Styled Components</S.Tag>
             <S.Tag>react-icons</S.Tag>
             <S.Tag>Prettier</S.Tag>
           </S.ContentsBox>
+          <Link to="/stackup">
+            <S.Button>자세히 보러 가기 👉</S.Button>
+          </Link>
         </S.ProjectBox>
         <S.ProjectBox>
           <S.TitleBox>
@@ -71,7 +75,7 @@ function Portfolio({ currentTab, setCurrentTab }) {
             <S.Line />
           </S.TitleBox>
           <S.Contents>
-            리액트 기능에 익숙해지기 위하여, 투두 리스트를 제작하였습니다.
+            리액트 기능에 익숙해지기 위하여, 개인으로 진행한 투두 리스트 웹 어플리케이션 입니다.
           </S.Contents>
           <S.SubTitle>Preview</S.SubTitle>
           <S.Img src={require("../asset/todo.gif")} alt="" />

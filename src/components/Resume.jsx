@@ -129,14 +129,13 @@ function Resume({ currentTab, setCurrentTab }) {
             </S.LeftBox>
             <S.RightBox>
               <S.Contents>
-                평소 필요했던 서비스를 타입스크립트로 제작하였습니다. <br />{" "}
-                (아직 개발 중 | 2023.05.20 배포 예정)
+              평소 필요했던 기능을 담은 단어장 웹 어플리케이션입니다.
               </S.Contents>
               <S.Text>
-                <del>
+                <a href="https://stack-up.vercel.app/">
                   <BsBoxArrowInUpRight className="icon" />
                   배포 사이트
-                </del>
+                </a>
               </S.Text>
               <S.Text margin="1rem">
                 <a href="https://github.com/sienna0715/stackUp">
@@ -156,10 +155,10 @@ function Resume({ currentTab, setCurrentTab }) {
               <S.SubTitle>Feature I made</S.SubTitle>
               <S.BulletedText>단어장(CRUD)</S.BulletedText>
               <S.BulletedText>
-                URL을 저장하여 쉽게 접속할 수 있는 즐겨찾기 메뉴
+                URL을 저장하여 쉽게 접속할 수 있는 나만의 즐겨찾기 페이지
               </S.BulletedText>
               <S.BulletedText>
-                암기한 단어 갯수, 목표를 확인할 수 있는 챌린지 메뉴
+                등록된 단어의 갯수와 달력을 확인할 수 있는 페이지
               </S.BulletedText>
             </S.RightBox>
           </S.Section>

@@ -7,8 +7,9 @@ import Resume from "./components/Resume";
 import styled from "styled-components";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Footer from "./commons/Footer";
-import Sendy from "./project/Sendy";
-import Todo from "./project/Todo";
+import Sendy from "./components/project/Sendy";
+import Todo from "./components/project/Todo";
+import StackUp from "./components/project/StackUp";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("Portfolio");
@@ -42,6 +43,7 @@ function App() {
           />
           <Route path="/sendy" element={<Sendy />} />
           <Route path="/todo" element={<Todo />} />
+          <Route path="/stackup" element={<StackUp />} />
         </Routes>
         <Footer />
       </BodyWrap>
