@@ -1,3 +1,19 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Sriracha&display=swap');
+
+:root {
+  --color-main: #1B1F24;
+  --color-submain: #232830;
+  --color-card: #2C343F;
+  --color-tag: #5D6C83;
+  --color-border: #505050;
+  --color-white: #ffffff;
+  --color-gray: #B7BEC9;
+  --color-point: #363EFF;
+  --color-darkgray: #272D39;
+  --color-lightgray: #D9D9D9;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,12 +25,10 @@ li {
 a {
   text-decoration: none;
   outline: none;
-  color: #000;
+  color: var(--color-white);
 }
+
 body {
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  background-image: url('./asset/background.png');
-  background-size: cover;
+  font-family: "Jeju Gothic", sans-serif;
+  color: var(--color-white);
 }
