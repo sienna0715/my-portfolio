@@ -1,17 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { FONT_STYLE } from "../style/fontStyle";
+import { Link } from "react-router-dom";
 //icons
 import { FiArrowRight } from "react-icons/fi";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { SiTistory } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 // components
 import Introduce from "../components/Introduce";
-import { Link } from "react-router-dom";
+import Stack from "../components/Stack";
+import Project from "../components/Project";
+import Achieve from "../components/Achieve";
 
 function Main() {
+  const handleClickTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <MainWrap>
+      <TopButton onClick={handleClickTop}><MdKeyboardDoubleArrowUp /></TopButton>
       <MainContainar>
         <LeftBox>
           <MyImg src={require("../asset/sion.png")} alt="sion" />
@@ -50,11 +59,32 @@ function Main() {
         </RightBox>
       </MainContainar>
       <Introduce />
+      <Stack />
+      <Project />
+      <Achieve />
     </MainWrap>
   );
 }
 
 export default Main;
+
+const TopButton = styled.button`
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 999;
+  color: var(--color-white);
+  background-color: var(--color-point);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+`;
 
 const MainWrap = styled.div`
   width: 100%;

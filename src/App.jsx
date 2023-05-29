@@ -1,22 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/commons/Header";
-import TopButton from "./components/commons/TopButton";
+
 // components
 import Main from "./pages/Main";
+import Header from "./components/commons/Header";
 
 function App() {
-
-  const handleClickTop = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
-    <BrowserRouter>
-        <TopButton onClick={handleClickTop} />
+    <BrowserRouter>  
         <Header />
         <Routes>
-          <Route path="/main" element={<Main />} />
+          <Route path="/" element={<Main />} />
         </Routes>
     </BrowserRouter>
   );

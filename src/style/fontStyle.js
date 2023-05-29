@@ -34,6 +34,11 @@ export const FONT_STYLE = {
       font-size: 1.2rem;
       letter-spacing: 1px;
     `,
+    text_15_medium: css`
+      font-family: "Jeju Gothic", sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    `,
     text_20_medium: css`
       font-family: "Jeju Gothic", sans-serif;
       font-size: 2rem;
