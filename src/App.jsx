@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // components
 import Main from "./pages/Main";
 import Header from "./components/commons/Header";
+import Footer from "./components/commons/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }

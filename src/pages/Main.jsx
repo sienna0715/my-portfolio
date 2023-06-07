@@ -48,14 +48,14 @@ function Main() {
               PORTFOLIO <FiArrowRight className="arrow" />
             </Button>
           </ContentsBox>
-          <MoveIcon>
+          <LinkIcon>
             <Link to="https://github.com/sienna0715">
               <BsGithub />
             </Link>
             <Link to="https://seven-day-five.tistory.com/">
               <SiTistory className="tistory" />
             </Link>
-          </MoveIcon>
+          </LinkIcon>
         </RightBox>
       </MainContainar>
       <Introduce />
@@ -193,7 +193,7 @@ const Button = styled.button`
   }
 `;
 
-const MoveIcon = styled.div`
+const LinkIcon = styled.div`
   font-size: 3rem;
   display: flex;
   .tistory {

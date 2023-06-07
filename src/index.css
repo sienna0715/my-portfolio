@@ -1,12 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;500;800&display=swap');
 
 :root {
   --color-main: #1B1F24;
   --color-submain: #232830;
   --color-card: #2C343F;
   --color-tag: #5D6C83;
-  --color-border: #505050;
+  --color-border: #4a5a6a;
   --color-white: #ffffff;
   --color-gray: #B7BEC9;
   --color-point: #363EFF;
