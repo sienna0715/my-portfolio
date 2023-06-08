@@ -12,6 +12,7 @@
   --color-point: #363EFF;
   --color-darkgray: #272D39;
   --color-lightgray: #D9D9D9;
+  --color-contact: #4a5a6ae0;
 }
 
 * {
@@ -31,4 +32,22 @@ a {
 body {
   font-family: "Jeju Gothic", sans-serif;
   color: var(--color-white);
+}
+
+/* 스크롤바 꾸미기 */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-darkgray);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-tag);
 }

@@ -20,7 +20,9 @@ function Main() {
 
   return (
     <MainWrap>
-      <TopButton onClick={handleClickTop}><MdKeyboardDoubleArrowUp /></TopButton>
+      <TopButton onClick={handleClickTop}>
+        <MdKeyboardDoubleArrowUp />
+      </TopButton>
       <MainContainar>
         <LeftBox>
           <MyImg src={require("../asset/sion.png")} alt="sion" />
@@ -36,17 +38,21 @@ function Main() {
           </Title>
           <ContentsBox>
             <SubTitle>ABOUT ME</SubTitle>
-            <Contents>Lorem ipsum dolor sit amet consectetur</Contents>
-            <Button>
-              LEARN MORE <FiArrowRight className="arrow" />
-            </Button>
+            <Contents>
+              다양한 기술을 배우는 걸 즐기며, 능동적으로 <br />
+              배움을 채워 더 좋은 서비스를 만들고자 합니다.
+            </Contents>
           </ContentsBox>
           <ContentsBox>
             <SubTitle>MY WORK</SubTitle>
-            <Contents>Lorem ipsum dolor sit amet consectetur</Contents>
-            <Button>
-              PORTFOLIO <FiArrowRight className="arrow" />
-            </Button>
+            <Contents>
+              리액트, 타입스크립트를 이용한 프로젝트를 <br /> 진행하였습니다.
+            </Contents>
+            <Link to="/portfolio">
+              <Button>
+                PORTFOLIO <FiArrowRight className="arrow" />
+              </Button>
+            </Link>
           </ContentsBox>
           <LinkIcon>
             <Link to="https://github.com/sienna0715">
@@ -160,11 +166,11 @@ const Title = styled.div`
 `;
 
 const ContentsBox = styled.div`
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   border-bottom: 1px solid var(--color-border);
-  padding-bottom: 2rem;
   margin-bottom: 2rem;
   z-index: 10;
 `;
@@ -179,11 +185,12 @@ const Contents = styled.div`
   color: var(--color-gray);
   margin: 2rem 0;
   text-align: right;
+  line-height: 1.5;
 `;
 
 const Button = styled.button`
+  margin-bottom: 2rem;
   ${FONT_STYLE.text.text_12_medium}
-  margin-top: 1rem;
   color: var(--color-white);
   background-color: transparent;
   border: none;

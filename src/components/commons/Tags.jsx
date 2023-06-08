@@ -103,9 +103,11 @@ const TagBox = styled.span`
 `;
 
 const Tag = styled.span`
+  width: max-content;
   background-color: var(--color-darkgray);
   box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 1);
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   border-radius: 5rem;
   margin-right: 1rem;
+  margin-bottom: 1rem
 `;

@@ -1,22 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Menus = ["Home", "About", "Portfolio"];
+function Header({ isContact, setIsContact }) {
+  const handleClickButton = () => {
+    setIsContact(!isContact);
+  };
 
-function Header() {
   return (
     <HeaderWrap>
       <HeaderContainar>
-        <Logo src={require("../../asset/logo.png")} alt="logo" />
+        <Link to="/">
+          <Logo src={require("../../asset/logo.png")} alt="logo" />
+        </Link>
         <HeaderBox>
           <MenuList>
-            {Menus.map((menu, idx) => (
-              <MenuItem className="select" key={idx}>
-                {menu}
-              </MenuItem>
-            ))}
+            <MenuItem>
+              <Link to="/">Home</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/portfolio">Portfolio</Link>
+            </MenuItem>
           </MenuList>
-          <Button>Contact</Button>
+          {isContact ? (
+            <Button
+              background="var(--color-contact)"
+              color="var(--color-white)"
+              onClick={handleClickButton}
+            >
+              Contact
+            </Button>
+          ) : (
+            <Button onClick={handleClickButton}>Contact</Button>
+          )}
         </HeaderBox>
       </HeaderContainar>
     </HeaderWrap>
@@ -55,9 +71,6 @@ const HeaderBox = styled.div`
 const MenuList = styled.ul`
   display: flex;
   align-items: center;
-  &:hover {
-    color: var(--color-gray);
-  }
 `;
 
 const MenuItem = styled.li`
@@ -68,9 +81,6 @@ const MenuItem = styled.li`
   &:nth-last-child(1) {
     margin-right: 0;
   }
-  &:hover {
-    color: var(--color-white);
-  }
 `;
 
 const Button = styled.button`
@@ -80,6 +90,8 @@ const Button = styled.button`
   margin-left: 3rem;
   border-radius: 10rem;
   border: none;
-  background-color: var(--color-white);
+  background-color: ${(props) =>
+    props.background ? props.background : "var(--color-white)"};
+  color: ${(props) => (props.color ? props.color : "var(--color-main)")};
   cursor: pointer;
 `;
