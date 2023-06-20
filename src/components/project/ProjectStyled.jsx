@@ -10,7 +10,7 @@ export const Wrap = styled.div`
 
 export const Container = styled.div`
   width: 1220px;
-  height: 1800px;
+  height: 2500px;
   margin-top: 5rem;
   overflow: hidden;
   display: flex;
@@ -60,6 +60,21 @@ export const RightBox = styled.div`
   flex-direction: column;
 `;
 
+export const ImgBox = styled.div`
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+`;
+
+export const Img = styled.img`
+  width: 400px;
+  margin-right: 1rem;
+`;
+export const SmallImg = styled.img`
+  width: 270px;
+  /* margin-right: 1rem; */
+`;
+
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -71,15 +86,31 @@ export const SubTilte = styled.div`
   margin-top: -0.5rem;
 `;
 
-export const SubText = styled.div`
+export const ContentsTitle = styled.div`
   color: var(--color-gray);
   margin-bottom: 0.5rem;
 `;
 
-export const Text = styled.div`
+export const ContentsText = styled.div`
   display: flex;
   align-items: center;
   .arrow {
     margin-left: 0.5rem;
   }
+`;
+
+export const Text = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+`;
+
+export const ListBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`;
+
+export const ListText = styled.li`
+  list-style-type: disc;
 `;

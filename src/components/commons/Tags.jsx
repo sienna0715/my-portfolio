@@ -21,7 +21,7 @@ export default function Tags() {
         <TagBox>PostCss</TagBox>
         <TagBox>TailwindCss</TagBox>
         <TagBox>Vercel</TagBox>
-        <TagBox>AWS</TagBox>
+        <TagBox>Node.js</TagBox>
         <TagBox>Postman</TagBox>
       </TagContainer>
       <TagContainer>
@@ -79,6 +79,9 @@ export function GitTag() {
 }
 export function GithubTag() {
   return <Tag>Github</Tag>;
+}
+export function ScrollTag() {
+  return <Tag>React Intersection Observer</Tag>;
 }
 
 const TagWrap = styled.div`

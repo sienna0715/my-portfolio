@@ -42,7 +42,7 @@ const ContactContainar = styled.div`
   border-radius: 1rem;
   position: absolute;
   top: 100px;
-  right: 90px;
+  right: 50px;
   z-index: 9999999;
 `;
 

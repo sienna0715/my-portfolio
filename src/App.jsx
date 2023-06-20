@@ -19,24 +19,23 @@ function App() {
   const handleModal = (e) => {
     if (isContact && !modalRef.current.contains(e.target)) {
       setIsContact(false);
-    } 
+    }
   };
 
   return (
-    <BrowserRouter>  
-    <Wrap onClick={handleModal}>
+    <BrowserRouter>
+      <Wrap onClick={handleModal}>
         <Header isContact={isContact} setIsContact={setIsContact} />
-        {isContact ? <Contact modalRef={modalRef}  /> : <></>}
+        {isContact ? <Contact modalRef={modalRef} /> : <></>}
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/sendy" element={<Sendy />} />
           {/* <Route path="/stackup" element={<StackUp />} /> */}
           {/* <Route path="/todo" element={<Todo />} /> */}
-          
         </Routes>
         <Footer />
-        </Wrap>
+      </Wrap>
     </BrowserRouter>
   );
 }
@@ -46,4 +45,6 @@ export default App;
 export const BREAKPOINTMOBILE = 767;
 export const BREAKPOINTTABLET = 991;
 
-const Wrap = styled.div``;
+const Wrap = styled.div`
+  position: relative;
+`;

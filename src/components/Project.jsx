@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FONT_STYLE } from "../style/fontStyle";
 // components
@@ -15,7 +16,11 @@ function Project() {
           <Card tagname="TypeScript" tagname2="Web Development" />
         </LeftBox>
         <RightBox>
-          <Card tagname="React" tagname2="Web Development" />
+          <Link to="/sendy">
+            <Card tagname="React" tagname2="Web Development" title="Sendy" subtitle="온라인 편지 서비스">
+              <Img src={require("../asset/sendy.png")} alt="sendy" />
+            </Card>
+          </Link>
           <Card tagname="React" tagname2="Web Development" />
         </RightBox>
       </ProjectContainar>
@@ -54,4 +59,10 @@ const RightBox = styled.div`
 const Text = styled.div`
   ${FONT_STYLE.title.title_25_extraBold}
   margin-bottom: 5rem;
+`;
+
+const Img = styled.img`
+  width: 155%;
+  transform: rotate(-20deg);
+  margin-left: -2rem;
 `;

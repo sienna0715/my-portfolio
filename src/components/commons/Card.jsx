@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { FONT_STYLE } from "../../style/fontStyle";
 
-function Card({ tagname, tagname2 }) {
+function Card({ tagname, tagname2, title, subtitle, children }) {
   return (
     <CardContainer>
       <TagBox>
         <Tag>{tagname}</Tag>
         <Tag>{tagname2}</Tag>
       </TagBox>
+      <Title>{title}</Title>
+      <SubTitle>{subtitle}</SubTitle>
+      <ImgBox>{children}</ImgBox>
     </CardContainer>
   );
 }
@@ -20,6 +24,7 @@ const CardContainer = styled.div`
   height: 600px;
   border-radius: 2rem;
   transition: 0.5s;
+  overflow: hidden;
   &:nth-child(1) {
     margin-bottom: 5rem;
   }
@@ -40,4 +45,19 @@ const Tag = styled.span`
   padding: 0.5rem 1rem;
   border-radius: 0.7rem;
   margin-right: 0.8rem;
+`;
+
+const Title = styled.div`
+  ${FONT_STYLE.title.title_30_extraBold}
+  margin-top: 2rem;
+  padding: 0 1rem;
+`;
+
+const SubTitle = styled.div`
+  ${FONT_STYLE.text.text_15_medium}
+  padding: 1rem;
+`;
+
+const ImgBox = styled.div`
+  width: 100%;
 `;
