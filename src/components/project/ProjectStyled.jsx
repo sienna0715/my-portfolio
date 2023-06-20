@@ -10,7 +10,7 @@ export const Wrap = styled.div`
 
 export const Container = styled.div`
   width: 1220px;
-  height: 2500px;
+  height: 3000px;
   margin-top: 5rem;
   overflow: hidden;
   display: flex;
@@ -70,9 +70,15 @@ export const Img = styled.img`
   width: 400px;
   margin-right: 1rem;
 `;
+
 export const SmallImg = styled.img`
   width: 270px;
   /* margin-right: 1rem; */
+`;
+
+export const MobileImg = styled.img`
+  width: 150px;
+  margin-right: 1rem;
 `;
 
 export const TextBox = styled.div`

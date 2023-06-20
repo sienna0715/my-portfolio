@@ -18,7 +18,7 @@ function Project() {
         <RightBox>
           <Link to="/sendy">
             <Card tagname="React" tagname2="Web Development" title="Sendy" subtitle="온라인 편지 서비스">
-              <Img src={require("../asset/sendy.png")} alt="sendy" />
+              <Img src={require("../asset/sendy/sendy.png")} alt="sendy" />
             </Card>
           </Link>
           <Card tagname="React" tagname2="Web Development" />

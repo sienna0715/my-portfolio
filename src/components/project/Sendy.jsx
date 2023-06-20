@@ -24,7 +24,7 @@ function Sendy() {
         <S.Bar />
         <S.Title>Sendy</S.Title>
         <S.Comment>프론트엔드 3명, 백엔드 3명이 모여 제작한 온라인 편지 서비스 입니다.</S.Comment>
-        <S.MainImg src={require("../../asset/sendy.gif")} alt="sendy" />
+        <S.MainImg src={require("../../asset/sendy/sendy.gif")} alt="sendy" />
         <S.Section>
           <S.LeftBox>
             <S.TextBox>
@@ -85,17 +85,17 @@ function Sendy() {
               해당 기간에 속하는 편지만, 최신순, 오래된순, 북마크가 된 편지만 볼 수 있도록 구현해냈습니다.  
             </S.Text>
             <S.ImgBox>
-              <S.Img src={require("../../asset/letterbox3.png")} alt="sendy" />
-              <S.Img src={require("../../asset/letterbox4.png")} alt="sendy" />
+              <S.Img src={require("../../asset/sendy/letterbox3.png")} alt="sendy" />
+              <S.Img src={require("../../asset/sendy/letterbox4.png")} alt="sendy" />
             </S.ImgBox>
             <S.Text>
               마이페이지에서 비밀번호 변경은 react hook form을 이용하여 제작하였습니다. <br/>
               좀 더 간편하고 관리하기가 쉬운 유효성 검사 로직을 구현하고 싶어 yup를 사용하였습니다. 
             </S.Text>
             <S.ImgBox>
-              <S.SmallImg src={require("../../asset/pwdchange1.png")} alt="sendy" />
-              <S.SmallImg src={require("../../asset/pwdchange2.png")} alt="sendy" />
-              <S.SmallImg src={require("../../asset/pwdchange3.png")} alt="sendy" />
+              <S.SmallImg src={require("../../asset/sendy/pwdchange1.png")} alt="sendy" />
+              <S.SmallImg src={require("../../asset/sendy/pwdchange2.png")} alt="sendy" />
+              <S.SmallImg src={require("../../asset/sendy/pwdchange3.png")} alt="sendy" />
             </S.ImgBox>
             <S.ListBox>
               <S.ListText>
@@ -106,6 +106,16 @@ function Sendy() {
               </S.ListText>
               <S.ListText>확인 버튼을 누르면 성공적으로 비밀번호가 변경되며, 로그인 페이지로 넘어가 로그인을 합니다.</S.ListText>
             </S.ListBox>
+            <S.ImgBox>
+              <S.MobileImg src={require("../../asset/sendy/sendy-mobile1.png")} alt="sendy" />
+              <S.MobileImg src={require("../../asset/sendy/sendy-mobile2.png")} alt="sendy" />
+              <S.MobileImg src={require("../../asset/sendy/sendy-mobile3.png")} alt="sendy" />
+              <S.MobileImg src={require("../../asset/sendy/sendy-mobile4.png")} alt="sendy" />
+              <S.MobileImg src={require("../../asset/sendy/sendy-mobile5.png")} alt="sendy" />
+            </S.ImgBox>
+            <S.Text>
+                모바일 환경에서도 사용할 수 있도록 반응형 작업을 완료하였습니다. 
+              </S.Text>
             <S.SubTilte>What I felt</S.SubTilte>
             <S.Text>첫 프로젝트였던 만큼 모든 것이 처음인 것들이 많았습니다. 그래서인지 많은 부족함을 느꼈고, 그만큼 더 노력 하였습니다. 본 프로젝트가 
               온전하다고 할 수는 없지만, 리팩토링을 통해 하드코딩된 부분을 효율적인 코드로 교체하고, 실패 했던 필터 영역을 성공적으로 구현하는 등 맡은 영역에 책임감을 가지고
