@@ -1,80 +1,47 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Portfolio from "./components/Portfolio";
-import Header from "./components/Header";
-import Resume from "./components/Resume";
-import styled from "styled-components";
-import { AiOutlineArrowUp } from "react-icons/ai";
-import Footer from "./commons/Footer";
+
+// components
+import Main from "./pages/Main";
+import Portfolio from "./pages/Portfolio";
+import Header from "./components/commons/Header";
+import Footer from "./components/commons/Footer";
 import Sendy from "./components/project/Sendy";
-import Todo from "./components/project/Todo";
-import StackUp from "./components/project/StackUp";
+import Contact from "./components/commons/Contact";
+import styled from "styled-components";
+// import StackUp from "./components/project/StackUp";
+// import Todo from "./components/project/Todo";
 
 function App() {
-  const [currentTab, setCurrentTab] = useState("Portfolio");
+  const [isContact, setIsContact] = useState(false);
+  const modalRef = useRef();
 
-  const handleClickTop = () => {
-    window.scrollTo(0, 0);
+  const handleModal = (e) => {
+    if (isContact && !modalRef.current.contains(e.target)) {
+      setIsContact(false);
+    }
   };
 
   return (
     <BrowserRouter>
-      <BodyWrap>
-        <Top onClick={handleClickTop}>
-          <AiOutlineArrowUp />
-        </Top>
-        <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <Wrap onClick={handleModal}>
+        <Header isContact={isContact} setIsContact={setIsContact} />
+        {isContact ? <Contact modalRef={modalRef} /> : <></>}
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Portfolio
-                currentTab={currentTab}
-                setCurrentTab={setCurrentTab}
-              />
-            }
-          />
-          <Route
-            path="/resume"
-            element={
-              <Resume currentTab={currentTab} setCurrentTab={setCurrentTab} />
-            }
-          />
+          <Route path="/" element={<Main />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/sendy" element={<Sendy />} />
-          <Route path="/todo" element={<Todo />} />
-          <Route path="/stackup" element={<StackUp />} />
+          {/* <Route path="/stackup" element={<StackUp />} /> */}
+          {/* <Route path="/todo" element={<Todo />} /> */}
         </Routes>
         <Footer />
-      </BodyWrap>
+      </Wrap>
     </BrowserRouter>
   );
 }
 
 export default App;
 
-const BodyWrap = styled.div`
-  width: 1000px;
-  height: 100%;
-  background-color: #fff;
-`;
-
-const Top = styled.div`
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  background-color: #fff;
-  width: 4rem;
-  height: 4rem;
-  font-size: 2rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.7s;
-  &:hover {
-    background-color: #242323;
-    color: #fff;
-  }
+const Wrap = styled.div`
+  position: relative;
 `;

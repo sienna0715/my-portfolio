@@ -1,86 +1,122 @@
 import styled from "styled-components";
+import { FONT_STYLE } from "../../style/fontStyle";
 
 export const Wrap = styled.div`
-  margin: 3rem;
+  width: 100%;
+  background-color: var(--color-main);
+  display: flex;
+  justify-content: center;
 `;
+
 export const Container = styled.div`
-  width: 900px;
+  width: 1220px;
+  height: 3000px;
+  margin-top: 5rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 `;
 
-export const Section = styled.div`
-  width: 100%;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
+export const Bar = styled.div`
+  width: 10rem;
+  height: 0.5rem;
+  background-color: var(--color-white);
 `;
 
 export const Title = styled.div`
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-`;
-export const ContentBox = styled.div`
-  width: 100%;
-  /* background-color: aquamarine; */
-  display: flex;
-`;
-export const Img = styled.img`
-  width: 50%;
-  margin-bottom: 0.5rem;
-  border: 1px solid #242323;
+  ${FONT_STYLE.title.title_40_extraBold}
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
-export const TextBox = styled.span`
-  width: 50%;
+export const Comment = styled.div`
+  ${FONT_STYLE.text.text_12_medium}
+  color: var(--color-gray);
+  margin-bottom: 4rem;
+`;
+
+export const MainImg = styled.img`
+  width: 100%;
+`;
+
+export const Section = styled.div`
+  margin-top: 3rem;
+  display: flex;
+  line-height: 2;
+`;
+
+export const LeftBox = styled.div`
+  width: 30%;
   padding: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-`;
-export const BulletedText = styled.div`
+  /* margin-right: 3rem; */
   display: flex;
-  margin-bottom: 0.8rem;
-`;
-export const Bulleted = styled.div`
-  margin-right: 0.5rem;
-  margin-top: 0.1rem;
-`;
-export const Text = styled.span``;
-export const BordText = styled.span`
-  font-weight: bold;
+  flex-direction: column;
 `;
 
-export const LinkBox = styled.div`
+export const RightBox = styled.div`
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ImgBox = styled.div`
   width: 100%;
   display: flex;
+  margin-bottom: 2rem;
 `;
-export const Link = styled.span`
-  font-size: 1.1rem;
+
+export const Img = styled.img`
+  width: 400px;
+  margin-right: 1rem;
+`;
+
+export const SmallImg = styled.img`
+  width: 270px;
+  /* margin-right: 1rem; */
+`;
+
+export const MobileImg = styled.img`
+  width: 150px;
+  margin-right: 1rem;
+`;
+
+export const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`;
+
+export const SubTilte = styled.div`
+  ${FONT_STYLE.title.title_16_extraBold}
+  margin-top: -0.5rem;
+`;
+
+export const ContentsTitle = styled.div`
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+`;
+
+export const ContentsText = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  background-color: #353535;
-  color: #fff;
-  padding: 0.5rem;
-  .icon {
-    margin-right: 0.5rem;
-    font-size: 0.9rem;
+  .arrow {
+    margin-left: 0.5rem;
   }
 `;
 
-export const ButtonBox = styled.div`
-  width: 100%;
+export const Text = styled.div`
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
 `;
-export const Button = styled.button`
-  width: max-content;
-  border: none;
-  background-color: #fff;
-  color: #242323;
-  border-bottom: 1px solid #242323;
-  font-size: 1.3rem;
-  cursor: pointer;
+
+export const ListBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`;
+
+export const ListText = styled.li`
+  list-style-type: disc;
 `;

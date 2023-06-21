@@ -1,0 +1,2 @@
+export const BREAKPOINTMOBILE = 767;
+export const BREAKPOINTTABLET = 991;
