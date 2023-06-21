@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { BREAKPOINTTABLET } from "../../breakpoint";
 
 function Header({ isContact, setIsContact }) {
   const handleClickButton = () => {
@@ -56,6 +57,9 @@ const HeaderContainar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    padding: 0 2rem;
+  }
 `;
 
 const Logo = styled.img`

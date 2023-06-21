@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FONT_STYLE } from "../style/fontStyle";
 // components
 import Card from "./commons/Card";
+import { BREAKPOINTTABLET } from "../breakpoint";
 
 function Project() {
   return (
@@ -44,12 +45,22 @@ const ProjectContainar = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 12rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    height: 2400px;
+  }
 `;
 
 const LeftBox = styled.div`
   margin-right: 5rem;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
 `;
 const RightBox = styled.div`
   display: flex;

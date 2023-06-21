@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FONT_STYLE } from "../../style/fontStyle";
 import { Link } from "react-router-dom";
+import { BREAKPOINTTABLET } from "../../breakpoint";
 //icons
 import { SiTistory } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
@@ -46,30 +47,38 @@ const FooterWrap = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 const FooterContainer = styled.div`
   width: 1000px;
   height: 450px;
-  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    align-items: center;
+  }
 `;
 
 const ContentsBox = styled.div`
-  width: 100%;
-  padding: 3rem 0;
+  width: max-content;
+  padding: 3rem;
   display: flex;
   border-bottom: 1px solid var(--color-border);
 `;
 
 const Img = styled.img`
+  width: 250px;
   margin: 0 5rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 200px;
+    margin: 0 3rem;
+  }
 `;
 
 const ProfileBox = styled.div`
-  margin-left: 3rem;
-  flex-grow: 2;
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +87,7 @@ const ProfileBox = styled.div`
 `;
 
 const ContactBox = styled.div`
-  flex-grow: 2;
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,11 +96,17 @@ const ContactBox = styled.div`
 
 const Title = styled.div`
   ${FONT_STYLE.title.title_30_extraBold}
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.title.title_25_extraBold}
+  }
 `;
 
 const SubTilte = styled.div`
   ${FONT_STYLE.title.title_16_extraBold}
   color: var(--color-gray);
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.title.title_14_extraBold}
+  }
 `;
 
 const LinkIcon = styled.div`
@@ -106,6 +121,9 @@ const LinkIcon = styled.div`
 
 const Text = styled.div`
   ${FONT_STYLE.title.title_16_extraBold}
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.title.title_14_extraBold}
+  }
 `;
 
 const Address = styled.div`

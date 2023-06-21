@@ -12,6 +12,7 @@ import Introduce from "../components/Introduce";
 import Stack from "../components/Stack";
 import Project from "../components/Project";
 import Achieve from "../components/Achieve";
+import { BREAKPOINTTABLET } from "../breakpoint";
 
 function Main() {
   const handleClickTop = () => {
@@ -105,14 +106,31 @@ const MainContainar = styled.div`
   height: 900px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
-const LeftBox = styled.div``;
+const LeftBox = styled.div`
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    display: none;
+  }
+`;
 const RightBox = styled.div`
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 5rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    margin-top: 0;
+    align-items: center;
+  }
 `;
 
 const MyImg = styled.img`
@@ -163,6 +181,9 @@ const Title = styled.div`
   ${FONT_STYLE.title.title_40_extraBold}
   margin: 3rem 0;
   text-align: right;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    text-align: center;
+  }
 `;
 
 const ContentsBox = styled.div`
@@ -173,11 +194,14 @@ const ContentsBox = styled.div`
   border-bottom: 1px solid var(--color-border);
   margin-bottom: 2rem;
   z-index: 10;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    align-items: center;
+  }
 `;
 
 const SubTitle = styled.div`
   ${FONT_STYLE.title.title_14_extraBold}
-  text-align: right;
+  text-align: right; 
 `;
 
 const Contents = styled.div`
@@ -186,6 +210,9 @@ const Contents = styled.div`
   margin: 2rem 0;
   text-align: right;
   line-height: 1.5;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`

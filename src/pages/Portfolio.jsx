@@ -4,6 +4,7 @@ import { FONT_STYLE } from "../style/fontStyle";
 import { Link } from "react-router-dom";
 // components
 import Card from "../components/commons/Card";
+import { BREAKPOINTTABLET } from "../breakpoint";
 
 function Portfolio() {
   return (
@@ -48,6 +49,9 @@ const PortfolioContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    height: max-content;
+  }
 `;
 
 const TilteBox = styled.div`
@@ -61,6 +65,9 @@ const TilteBox = styled.div`
 const ProjectBox = styled.div`
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    flex-direction: column;
+  }
 `;
 
 const Bar = styled.div`
@@ -79,11 +86,18 @@ const LeftBox = styled.div`
   margin-right: 5rem;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
 `;
 
 const RightBox = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    margin-bottom: 5rem;
+  }
 `;
 
 const Img = styled.img`

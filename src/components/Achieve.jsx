@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FONT_STYLE } from "../style/fontStyle";
+import { BREAKPOINTTABLET } from "../breakpoint";
 
 function Achieve() {
   return (
@@ -26,7 +27,7 @@ function Achieve() {
           <RightBox>
             <SubTitle>Certificates</SubTitle>
             <Content>
-              TOELC 800 <br />
+              TOEIC 800 <br />
               <br />
               2022.12 <br />
               웹디자인 기능사 <br />
@@ -53,48 +54,81 @@ const AchieveWrap = styled.div`
 const AchieveContainar = styled.div`
   width: 1220px;
   height: 980px;
-  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    align-items: center;
+  }
 `;
 
 const Title = styled.div`
   ${FONT_STYLE.title.title_40_extraBold}
   margin-top: 3rem;
   margin-bottom: 1rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    text-align: center;
+  }
 `;
 
 const Line = styled.div`
   border: 1px solid var(--color-border);
   margin-bottom: 2rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 90%;
+  }
 `;
 
 const ContentsBox = styled.div`
   width: 100%;
   display: flex;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const LeftBox = styled.div`
   width: 35%;
   padding-left: 3rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 `;
 
 const MiddleBox = styled.div`
   width: 35%;
   padding-left: 3rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 `;
 
 const RightBox = styled.div`
   width: 30%;
   padding-left: 2rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const SubTitle = styled.div`
   margin-bottom: 1rem;
   color: var(--color-gray);
   ${FONT_STYLE.title.title_14_extraBold}
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    margin-right: 2rem;
+  }
 `;
 
 const Content = styled.div`

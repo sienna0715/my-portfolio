@@ -42,9 +42,6 @@ function App() {
 
 export default App;
 
-export const BREAKPOINTMOBILE = 767;
-export const BREAKPOINTTABLET = 991;
-
 const Wrap = styled.div`
   position: relative;
 `;
