@@ -15,7 +15,11 @@ function Portfolio() {
         </TilteBox>
         <ProjectBox>
           <LeftBox>
-            <Link to='/sendy'><Card tagname="React" tagname2="Web Development" /></Link>
+            <Link to="/sendy">
+              <Card tagname="React" tagname2="Web Development" title="Sendy" subtitle="온라인 편지 서비스">
+                <Img src={require("../asset/sendy/sendy.png")} alt="sendy" />
+              </Card>
+            </Link>
             <Card tagname="React" tagname2="Web Development" />
           </LeftBox>
           <RightBox>
@@ -80,4 +84,10 @@ const LeftBox = styled.div`
 const RightBox = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const Img = styled.img`
+  width: 155%;
+  transform: rotate(-20deg);
+  margin-left: -2rem;
 `;
