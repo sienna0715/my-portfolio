@@ -99,6 +99,9 @@ const MainWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    overflow-x: hidden;
+  }
 `;
 
 const MainContainar = styled.div`
