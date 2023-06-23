@@ -25,12 +25,12 @@ function Main() {
         <MdKeyboardDoubleArrowUp />
       </TopButton>
       <MainContainar>
-        <LeftBox>
+        {/* <LeftBox>
           <MyImg src={require("../asset/sion.png")} alt="sion" />
           <Circle1 />
           <Circle2 />
           <Circle3 />
-        </LeftBox>
+        </LeftBox> */}
         <RightBox>
           <Bar />
           <Title>
