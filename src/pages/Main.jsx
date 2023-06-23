@@ -25,12 +25,12 @@ function Main() {
         <MdKeyboardDoubleArrowUp />
       </TopButton>
       <MainContainar>
-        <LeftBox>
+        {/* <LeftBox>
           <MyImg src={require("../asset/sion.png")} alt="sion" />
           <Circle1 />
           <Circle2 />
           <Circle3 />
-        </LeftBox>
+        </LeftBox> */}
         <RightBox>
           <Bar />
           <Title>
@@ -99,6 +99,9 @@ const MainWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    overflow-x: hidden;
+  }
 `;
 
 const MainContainar = styled.div`

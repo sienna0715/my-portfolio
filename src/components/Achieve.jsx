@@ -27,8 +27,6 @@ function Achieve() {
           <RightBox>
             <SubTitle>Certificates</SubTitle>
             <Content>
-              TOEIC 800 <br />
-              <br />
               2022.12 <br />
               웹디자인 기능사 <br />
               <br />

@@ -10,7 +10,7 @@ export const Wrap = styled.div`
 
 export const Container = styled.div`
   width: 1220px;
-  height: 3000px;
+  height: 2800px;
   margin-top: 5rem;
   overflow: hidden;
   display: flex;
@@ -93,6 +93,7 @@ export const SubTilte = styled.div`
 `;
 
 export const ContentsTitle = styled.div`
+  ${FONT_STYLE.text.text_10_extraBold}
   color: var(--color-gray);
   margin-bottom: 0.5rem;
 `;
@@ -109,6 +110,18 @@ export const Text = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+`;
+
+export const MyWork = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
 `;
 
 export const ListBox = styled.div`

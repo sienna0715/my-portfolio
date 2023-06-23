@@ -56,10 +56,7 @@ function Introduce() {
           <br />
           물론 신입 개발자가 이 정답을 찾기란 쉽지 않을 것입니다. 그러나
           프론트엔드 개발자로서 단단하게 성장하고 싶다는 확신으로 자바스크립에서
-          시작하여 리액트, 타입스크립트를 공부하였고, 나의 분야를 더 잘 하기
-          위해 고민을 하다 보니 내가 알고 있는 프로그래밍 언어를 더욱더
-          활용적으로 사용하면서 애플리케이션의 전반적인 작동을 조금이나마 이해할
-          수 있을 것 같아 Node.js를 공부하고 있습니다. <br />
+          시작하여 리액트, 타입스크립트를 공부하였습니다.  <br />
           <br />
           알게 된 사실을 이해하는 것으로만 그치지 않고, 블로그를 통해 습득한
           지식을 정리하며 공유하고 있습니다.
@@ -85,7 +82,7 @@ const IntroContainar = styled.div`
   overflow: hidden;
   display: flex;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
-    height: 1150px;
+    height: 1000px;
     flex-direction: column;
     align-items: center;
   }
