@@ -33,9 +33,10 @@ export default Project;
 
 const ProjectWrap = styled.div`
   width: 100%;
-  background-color: var(--color-submain);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
+  border-top: 1px solid var(--color-gray);
 `;
 
 const ProjectContainar = styled.div`
@@ -68,7 +69,7 @@ const RightBox = styled.div`
 `;
 
 const Text = styled.div`
-  ${FONT_STYLE.title.title_25_extraBold}
+  ${FONT_STYLE.title.title_25_bold}
   margin-bottom: 5rem;
 `;
 

@@ -23,17 +23,6 @@ function Header({ isContact, setIsContact }) {
               <Link to="/portfolio">Portfolio</Link>
             </MenuItem>
           </MenuList>
-          {isContact ? (
-            <Button
-              background="var(--color-contact)"
-              color="var(--color-white)"
-              onClick={handleClickButton}
-            >
-              Contact
-            </Button>
-          ) : (
-            <Button onClick={handleClickButton}>Contact</Button>
-          )}
         </HeaderBox>
       </HeaderContainar>
     </HeaderWrap>
@@ -45,7 +34,7 @@ export default Header;
 const HeaderWrap = styled.div`
   width: 100%;
   height: 80px;
-  background-color: var(--color-main);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
 `;
@@ -85,17 +74,4 @@ const MenuItem = styled.li`
   &:nth-last-child(1) {
     margin-right: 0;
   }
-`;
-
-const Button = styled.button`
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.5rem;
-  margin-left: 3rem;
-  border-radius: 10rem;
-  border: none;
-  background-color: ${(props) =>
-    props.background ? props.background : "var(--color-white)"};
-  color: ${(props) => (props.color ? props.color : "var(--color-main)")};
-  cursor: pointer;
 `;

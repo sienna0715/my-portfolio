@@ -44,13 +44,13 @@ export default Achieve;
 
 const AchieveWrap = styled.div`
   width: 100%;
-  background-color: var(--color-main);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
 `;
 
 const AchieveContainar = styled.div`
-  width: 1220px;
+  width: 1100px;
   height: 980px;
   overflow: hidden;
   display: flex;
@@ -62,7 +62,8 @@ const AchieveContainar = styled.div`
 `;
 
 const Title = styled.div`
-  ${FONT_STYLE.title.title_40_extraBold}
+  ${FONT_STYLE.title.title_40_bold}
+  color: var(--color-main);
   margin-top: 3rem;
   margin-bottom: 1rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
@@ -71,7 +72,7 @@ const Title = styled.div`
 `;
 
 const Line = styled.div`
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-gray);
   margin-bottom: 2rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: 90%;
@@ -89,8 +90,7 @@ const ContentsBox = styled.div`
 `;
 
 const LeftBox = styled.div`
-  width: 35%;
-  padding-left: 3rem;
+  width: 33%;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: 100%;
     display: flex;
@@ -100,8 +100,8 @@ const LeftBox = styled.div`
 `;
 
 const MiddleBox = styled.div`
-  width: 35%;
-  padding-left: 3rem;
+  width: 33%;
+  padding-left: 4rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: 100%;
     display: flex;
@@ -111,8 +111,8 @@ const MiddleBox = styled.div`
 `;
 
 const RightBox = styled.div`
-  width: 30%;
-  padding-left: 2rem;
+  width: 33%;
+  padding-left: 5rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: 100%;
     display: flex;
@@ -121,9 +121,9 @@ const RightBox = styled.div`
 `;
 
 const SubTitle = styled.div`
-  margin-bottom: 1rem;
-  color: var(--color-gray);
-  ${FONT_STYLE.title.title_14_extraBold}
+  margin-bottom: 2rem;
+  color: var(--color-main);
+  ${FONT_STYLE.title.title_14_bold}
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     margin-right: 2rem;
   }
