@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { FONT_STYLE } from "../style/fontStyle";
 import { Link } from "react-router-dom";
 import { BREAKPOINTTABLET } from "../breakpoint";
@@ -112,6 +112,15 @@ const Title = styled.div`
   }
 `;
 
+const Vibration = keyframes`
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    ransform: rotate(-2deg);
+  }
+`;
+
 const CardBox = styled.div`
   padding-left: 2rem;
   display: flex;
@@ -125,6 +134,9 @@ const Card = styled.div`
   box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.8);
   background-color: var(--color-card);
   cursor: pointer;
+  &:hover {
+    animation: ${Vibration} 300ms;
+  }
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: 200px;
     height: 300px;
@@ -194,4 +206,8 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   cursor: pointer;
+  &:hover {
+    color: var(--color-submain);
+    animation: ${Vibration} 300ms;
+  }
 `;
