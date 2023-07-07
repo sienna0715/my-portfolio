@@ -42,12 +42,13 @@ const HeaderWrap = styled.div`
 const HeaderContainar = styled.div`
   width: 1220px;
   height: 100%;
+  padding: 0 2rem;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
-    padding: 0 2rem;
+    width: 100%;
   }
 `;
 
@@ -64,6 +65,7 @@ const HeaderBox = styled.div`
 const MenuList = styled.ul`
   display: flex;
   align-items: center;
+  margin-bottom: 1.2rem;
 `;
 
 const MenuItem = styled.li`

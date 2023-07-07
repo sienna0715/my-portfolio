@@ -107,6 +107,7 @@ const MiddleBox = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    padding-left: 0;
   }
 `;
 
@@ -117,6 +118,8 @@ const RightBox = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin-left: -1.2rem;
   }
 `;
 
@@ -126,6 +129,7 @@ const SubTitle = styled.div`
   ${FONT_STYLE.title.title_14_bold}
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     margin-right: 2rem;
+    margin-bottom: 0;
   }
 `;
 

@@ -37,6 +37,11 @@ export const FONT_STYLE = {
       font-weight: 800;
       font-size: 3rem;
     `,
+    title_35_bold: css`
+      font-family: 'Maven Pro', sans-serif;
+      font-weight: 800;
+      font-size: 3.5rem;
+    `,
     title_40_bold: css`
       font-family: 'Maven Pro', sans-serif;
       font-weight: 800;
@@ -44,9 +49,14 @@ export const FONT_STYLE = {
     `,
   },
   text: {
-    text_10_medium: css`
+    text_9_medium: css`
       font-family: 'Pretendard-Regular';
-      font-size: 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    `,
+    text_11_medium: css`
+      font-family: 'Pretendard-Regular';
+      font-size: 1.1rem;
       letter-spacing: 1px;
     `,
     text_12_medium: css`
@@ -62,6 +72,11 @@ export const FONT_STYLE = {
     text_20_medium: css`
       font-family: 'Pretendard-Regular';
       font-size: 2rem;
+      letter-spacing: 1px;
+    `,
+    text_11_bold: css`
+      font-family: "Pretendard-SemiBold";
+      font-size: 1.1rem;
       letter-spacing: 1px;
     `,
     text_10_extraBold: css`

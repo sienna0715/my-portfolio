@@ -13,19 +13,17 @@ function Blog() {
         <ContentsBox>
           <Title>Keep posting on a blog!</Title>
           <CardBox>
-            <Link to="https://seven-day-five.tistory.com/5">
+            <Link to="https://seven-day-five.tistory.com/26">
               <Card>
                 <ImgBox>
                   <Img
-                    src={require("../asset/memoticon1.png")}
+                    src={require("../asset/memoticon3.png")}
                     alt="미모티콘"
                   />
                 </ImgBox>
                 <TextBox>
-                  <CardDate>2023.03.21</CardDate>
-                  <CardTitle>
-                    Intersection Observer API로 무한 스크롤 구현하기
-                  </CardTitle>
+                  <CardDate>2023.07.03</CardDate>
+                  <CardTitle>Vite는 맛있어:)</CardTitle>
                 </TextBox>
               </Card>
             </Link>
@@ -61,9 +59,11 @@ function Blog() {
             </Link>
           </CardBox>
           <ButtonBox>
-            <Button>
-              Go to blog <FiArrowRight />
-            </Button>
+            <Link to="https://seven-day-five.tistory.com/">
+              <Button>
+                Go to blog <FiArrowRight />
+              </Button>
+            </Link>
           </ButtonBox>
         </ContentsBox>
       </BlogContainar>
@@ -107,6 +107,9 @@ const Title = styled.div`
   ${FONT_STYLE.title.title_40_bold}
   margin-top: 3rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.title.title_30_bold}
+  }
 `;
 
 const CardBox = styled.div`
@@ -118,14 +121,13 @@ const Card = styled.div`
   width: 300px;
   height: 400px;
   margin-right: 3rem;
-  &:nth-last-child(2) {
-    margin-right: 0;
-  }
   border-radius: 2.2rem;
   box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.8);
   background-color: var(--color-card);
   cursor: pointer;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 200px;
+    height: 300px;
   }
 `;
 
@@ -136,10 +138,11 @@ const ImgBox = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    height: 180px;
   }
 `;
 const Img = styled.img`
-  width: 90%;
+  width: 85%;
 `;
 
 const TextBox = styled.div`
@@ -150,17 +153,33 @@ const TextBox = styled.div`
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   line-height: 1.7;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    height: 120px;
+  }
 `;
 
 const CardDate = styled.div`
   color: var(--color-gray);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.text.text_9_medium}
+  }
 `;
 
 const CardTitle = styled.div`
   color: var(--color-white);
   ${FONT_STYLE.text.text_12_medium}
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    ${FONT_STYLE.text.text_9_medium}
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+  }
 `;
 
 const ButtonBox = styled.div`
@@ -174,4 +193,5 @@ const Button = styled.button`
   border: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;

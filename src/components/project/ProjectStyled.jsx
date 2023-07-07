@@ -20,13 +20,14 @@ export const Container = styled.div`
 `;
 
 export const Bar = styled.div`
-  width: 10rem;
+  width: 7rem;
   height: 0.5rem;
-  background-color: var(--color-black);
+  background-color: var(--color-main);
 `;
 
 export const Title = styled.div`
   ${FONT_STYLE.title.title_40_bold}
+  color: var(--color-main);
   margin-top: 2rem;
   margin-bottom: 2rem;
 `;
@@ -126,12 +127,13 @@ export const SubTilte = styled.div`
 `;
 
 export const ContentsTitle = styled.div`
-  ${FONT_STYLE.text.text_10_bold}
+  ${FONT_STYLE.text.text_11_bold}
   color: var(--color-gray);
   margin-bottom: 0.5rem;
 `;
 
 export const ContentsText = styled.div`
+  ${FONT_STYLE.text.text_11_bold}
   display: flex;
   align-items: center;
   .arrow {
@@ -140,6 +142,7 @@ export const ContentsText = styled.div`
 `;
 
 export const Text = styled.div`
+  ${FONT_STYLE.text.text_11_medium}
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -151,7 +154,7 @@ export const MyWork = styled.div`
   margin-bottom: 2rem;
   background-color: var(--color-lightgray);
   color: black;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   margin-top: 1rem;
 `;
@@ -163,5 +166,6 @@ export const ListBox = styled.div`
 `;
 
 export const ListText = styled.li`
+  ${FONT_STYLE.text.text_11_medium}
   list-style-type: disc;
 `;

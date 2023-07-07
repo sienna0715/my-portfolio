@@ -36,7 +36,6 @@ const ProjectWrap = styled.div`
   background-color: var(--color-white);
   display: flex;
   justify-content: center;
-  border-top: 1px solid var(--color-gray);
 `;
 
 const ProjectContainar = styled.div`

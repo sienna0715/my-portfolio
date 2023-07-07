@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { BREAKPOINTTABLET } from "../../breakpoint";
+import { FONT_STYLE } from "../../style/fontStyle";
+// import { BREAKPOINTTABLET } from "../../breakpoint";
 
 // export default function Tags() {
 //   return (
@@ -99,10 +100,11 @@ export function ScrollTag() {
 // `;
 
 const Tag = styled.span`
-  width: max-content;
-  background-color: var(--color-darkgray);
+  ${FONT_STYLE.text.text_11_bold}
+  background-color: var(--color-main);
   color: var(--color-white);
-  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 1);
+  width: max-content;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
   padding: 0 1rem;
   border-radius: 5rem;
   margin-right: 1rem;

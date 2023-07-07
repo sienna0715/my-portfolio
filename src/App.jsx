@@ -7,31 +7,19 @@ import Portfolio from "./pages/Portfolio";
 import Header from "./components/commons/Header";
 import Footer from "./components/commons/Footer";
 import Sendy from "./components/project/Sendy";
-import Contact from "./components/commons/Contact";
 import styled from "styled-components";
-// import StackUp from "./components/project/StackUp";
 // import Todo from "./components/project/Todo";
 
 function App() {
-  const [isContact, setIsContact] = useState(false);
-  const modalRef = useRef();
-
-  const handleModal = (e) => {
-    if (isContact && !modalRef.current.contains(e.target)) {
-      setIsContact(false);
-    }
-  };
 
   return (
     <BrowserRouter>
-      <Wrap onClick={handleModal}>
-        <Header isContact={isContact} setIsContact={setIsContact} />
-        {isContact ? <Contact modalRef={modalRef} /> : <></>}
+      <Wrap>
+        <Header />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/sendy" element={<Sendy />} />
-          {/* <Route path="/stackup" element={<StackUp />} /> */}
           {/* <Route path="/todo" element={<Todo />} /> */}
         </Routes>
         <Footer />

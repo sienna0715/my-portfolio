@@ -83,11 +83,12 @@ const MainWrap = styled.div`
 const MainContainar = styled.div`
   width: 1220px;
   height: 700px;
-  position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 100%;
+  }
 `;
 
 const ContentsBox = styled.div`
@@ -96,17 +97,27 @@ const ContentsBox = styled.div`
   display: flex;
   align-items: center;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
   }
 `;
 
 const LeftBox = styled.div`
   width: 55%;
+  display: flex;
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: max-content;
+  }
 `;
 const RightBox = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 3rem;
   }
 `;
 
@@ -115,13 +126,17 @@ const Bar = styled.div`
   height: 0.2rem;
   transform: rotate(-70deg);
   background-color: var(--color-main);
+  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
+    display: none;
+  }
 `;
 
 const Title = styled.div`
   ${FONT_STYLE.title.title_40_bold}
   text-align: right;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
-    
+    width: max-content;
+    ${FONT_STYLE.title.title_35_bold}
   }
 `;
 
@@ -130,7 +145,6 @@ const Text = styled.div`
   color: var(--color-main);
   line-height: 2;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
-    
   }
 `;
 
