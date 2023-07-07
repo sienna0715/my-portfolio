@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BREAKPOINTTABLET } from "../../breakpoint";
 
-function Header({ isContact, setIsContact }) {
-  const handleClickButton = () => {
-    setIsContact(!isContact);
-  };
-
+function Header() {
   return (
     <HeaderWrap>
       <HeaderContainar>

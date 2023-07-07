@@ -84,16 +84,14 @@ export const ImgBox = styled.div`
 export const Img = styled.img`
   width: 400px;
   margin-right: 1rem;
-  @media screen and (max-width: ${BREAKPOINTTABLET}px) {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
 `;
 
 export const SmallImg = styled.img`
   width: 270px;
+  margin-bottom: 1rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     margin-right: 1rem;
-    margin-bottom: 1rem;
   }
 `;
 
