@@ -4,7 +4,7 @@ import { BREAKPOINTTABLET } from "../../breakpoint";
 
 export const Wrap = styled.div`
   width: 100%;
-  background-color: var(--color-main);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
 `;
@@ -20,20 +20,21 @@ export const Container = styled.div`
 `;
 
 export const Bar = styled.div`
-  width: 10rem;
+  width: 7rem;
   height: 0.5rem;
-  background-color: var(--color-white);
+  background-color: var(--color-main);
 `;
 
 export const Title = styled.div`
-  ${FONT_STYLE.title.title_40_extraBold}
+  ${FONT_STYLE.title.title_40_bold}
+  color: var(--color-main);
   margin-top: 2rem;
   margin-bottom: 2rem;
 `;
 
 export const Comment = styled.div`
   ${FONT_STYLE.text.text_12_medium}
-  color: var(--color-gray);
+  color: var(--color-darkgray);
   margin-bottom: 4rem;
 `;
 
@@ -99,6 +100,7 @@ export const SmallImg = styled.img`
 export const MobileImg = styled.img`
   width: 150px;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     margin-bottom: 1rem;
   }
@@ -120,17 +122,18 @@ export const TextBox = styled.div`
 `;
 
 export const SubTilte = styled.div`
-  ${FONT_STYLE.title.title_16_extraBold}
+  ${FONT_STYLE.title.title_16_bold}
   margin-top: -0.5rem;
 `;
 
 export const ContentsTitle = styled.div`
-  ${FONT_STYLE.text.text_10_extraBold}
+  ${FONT_STYLE.text.text_11_bold}
   color: var(--color-gray);
   margin-bottom: 0.5rem;
 `;
 
 export const ContentsText = styled.div`
+  ${FONT_STYLE.text.text_11_bold}
   display: flex;
   align-items: center;
   .arrow {
@@ -139,6 +142,7 @@ export const ContentsText = styled.div`
 `;
 
 export const Text = styled.div`
+  ${FONT_STYLE.text.text_11_medium}
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -148,10 +152,9 @@ export const MyWork = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  border: 1px solid #fff;
-  background-color: #fff;
+  background-color: var(--color-lightgray);
   color: black;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   margin-top: 1rem;
 `;
@@ -163,5 +166,6 @@ export const ListBox = styled.div`
 `;
 
 export const ListText = styled.li`
+  ${FONT_STYLE.text.text_11_medium}
   list-style-type: disc;
 `;

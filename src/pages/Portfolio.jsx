@@ -17,7 +17,12 @@ function Portfolio() {
         <ProjectBox>
           <LeftBox>
             <Link to="/sendy">
-              <Card tagname="React" tagname2="Web Development" title="Sendy" subtitle="온라인 편지 서비스">
+              <Card
+                tagname="React"
+                tagname2="Web Development"
+                title="Sendy"
+                subtitle="온라인 편지 서비스"
+              >
                 <Img src={require("../asset/sendy/sendy.png")} alt="sendy" />
               </Card>
             </Link>
@@ -37,7 +42,7 @@ export default Portfolio;
 
 const PortfolioWrap = styled.div`
   width: 100%;
-  background-color: var(--color-main);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
 `;
@@ -73,11 +78,12 @@ const ProjectBox = styled.div`
 const Bar = styled.div`
   width: 10rem;
   height: 0.5rem;
-  background-color: var(--color-white);
+  background-color: var(--color-main);
 `;
 
 const Title = styled.div`
-  ${FONT_STYLE.title.title_40_extraBold}
+  ${FONT_STYLE.title.title_40_bold}
+  color: var(--color-main);
   margin: 3rem 0;
   text-align: right;
 `;

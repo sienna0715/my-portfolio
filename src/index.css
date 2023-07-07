@@ -6,6 +6,14 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Pretendard-ExtraBold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
     format("woff");
@@ -13,20 +21,18 @@
   font-style: normal;
   font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
 
 :root {
-  --color-main: #1B1F24;
-  --color-submain: #232830;
-  --color-card: #2C343F;
-  --color-tag: #5D6C83;
-  --color-border: #4a5a6a;
-  --color-white: #ffffff;
+  --color-main: #2C343F;
+  --color-submain: #5D6C83;
+  --color-tag: #272D39;
+  --color-card: #576579;
   --color-gray: #B7BEC9;
-  --color-point: #363EFF;
+  --color-lightgray: #F8F8F8;
   --color-darkgray: #272D39;
-  --color-lightgray: #D9D9D9;
-  --color-contact: #4a5a6ae0;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 * {
@@ -40,12 +46,11 @@ li {
 a {
   text-decoration: none;
   outline: none;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 body {
   font-family: 'Pretendard-Regular';
-  color: var(--color-white);
 }
 
 /* 스크롤바 꾸미기 */
@@ -54,14 +59,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-darkgray);
+  background-color: var(--color-lightgray);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-border);
+  background-color: var(--color-submain);
   border-radius: 5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-tag);
+  background-color: var(--color-gray);
 }
