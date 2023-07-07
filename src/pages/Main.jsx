@@ -106,6 +106,7 @@ const ContentsBox = styled.div`
 const LeftBox = styled.div`
   width: 55%;
   display: flex;
+  justify-content: flex-end;
   @media screen and (max-width: ${BREAKPOINTTABLET}px) {
     width: max-content;
   }
